@@ -292,13 +292,13 @@ Input.grid(row=0,column=1,rowspan=2,sticky=E)
 Input.insert(0,"Ex: A5 5")
 Input.focus()
 
-Submit = Button(root,text="Submit",command=move,width=3,height=3)
+Submit = Button(root,text="Submit",command=move,width=8,height=3,bg="gray")
 Submit.grid(row=0,column=2,rowspan=2,sticky=W)
 
-Newgame = Button(root,text="New Game",command=newGame,width=6)
+Newgame = Button(root,text="New Game",command=newGame,width=14,bg="gray")
 Newgame.grid(row=1,column=3,sticky=W)
 
-Hint = Button(root,text="Hint",command=hint,width=6)
+Hint = Button(root,text="Hint",command=hint,width=14,bg="gray")
 Hint.grid(row=0,column=3,sticky=E)
 
 display = Label(root,text=toString(board),font=("Arial",16))
